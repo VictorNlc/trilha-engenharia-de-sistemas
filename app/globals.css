@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #eef1ec;
+  --surface: #ffffff;
+  --surface-2: #e4e9e3;
+  --ink: #1c2a2e;
+  --ink-soft: #4b5b58;
+  --ink-faint: #7a8a86;
+  --line: #cdd8d0;
+  --accent: #1f6f8b;
+  --accent-ink: #0f4457;
+  --accent-tint: #e2eef2;
+  --warm: #b8722c;
+  --warm-tint: #f6ead9;
+  --good: #3f7d51;
+  --good-tint: #e4efe4;
+  --bad: #b3452f;
+  --bad-tint: #f8e6e1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #141a1a;
+    --surface: #1b2323;
+    --surface-2: #212b2a;
+    --ink: #e9efec;
+    --ink-soft: #aebab6;
+    --ink-faint: #7d8d89;
+    --line: #2d3937;
+    --accent: #6fc1de;
+    --accent-ink: #bfe6f2;
+    --accent-tint: #1c3038;
+    --warm: #e7ab6c;
+    --warm-tint: #31281a;
+    --good: #7fbd8e;
+    --good-tint: #1c2b1e;
+    --bad: #e28a76;
+    --bad-tint: #331e1a;
+  }
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  background-image: linear-gradient(var(--line) 1px, transparent 1px);
+  background-size: 100% 32px;
+}
+
+.font-display { font-family: var(--font-fraunces), Georgia, serif; }
+.font-mono { font-family: var(--font-ibm-plex-mono), ui-monospace, monospace; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.prose-content h2 { font-family: var(--font-fraunces), serif; font-size: 1.3rem; font-weight: 600; margin: 1.6em 0 0.5em; }
+.prose-content h3 { font-family: var(--font-fraunces), serif; font-size: 1.1rem; font-weight: 600; margin: 1.4em 0 0.4em; }
+.prose-content p { margin: 0 0 0.9em; color: var(--ink-soft); }
+.prose-content ul, .prose-content ol { margin: 0 0 0.9em; padding-left: 1.4em; color: var(--ink-soft); }
+.prose-content li { margin-bottom: 0.3em; }
+.prose-content strong { color: var(--ink); }
+.prose-content code { font-family: var(--font-ibm-plex-mono), monospace; background: var(--surface-2); padding: 1px 5px; border-radius: 3px; font-size: 0.9em; }
+
+.badge {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  white-space: nowrap;
+}
