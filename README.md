@@ -5,6 +5,10 @@ real (≥80% de aproveitamento). Questões objetivas (múltipla escolha / verdad
 corrigidas na hora; questões escritas ficam numa fila de revisão manual (até 24h) antes de contar
 para a nota. Cada módulo tem um mural de dúvidas embutido + link para uma comunidade externa.
 
+**[Ver no ar](https://engenharia-de-sistemas-virid.vercel.app)**
+
+![Página inicial da Trilha](docs/print.png)
+
 Stack: **Next.js 14 (App Router) + TypeScript + Tailwind + Supabase** (Postgres + Auth). Feito para
 hospedar de graça na **Vercel** com um projeto Supabase gratuito.
 
